@@ -1,0 +1,607 @@
+.navButt {
+  background-color: #ececec;
+  color: gray;
+  aspect-ratio: 1;
+  width: 40px;
+}
+
+.navbar-brand > span {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.navbar-toggler {
+  /* border-color: #000000; */
+  aspect-ratio: 5/4;
+  background: white;
+  /* color: black; */
+}
+.navbar-toggler > * {
+  color: black;
+}
+
+.rightButtMenu > * {
+  margin: 0px 3px;
+}
+.dotNews {
+  width: 13px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: #754ffe;
+  top: 2px;
+  right: 2px;
+  border: solid 3px white;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.profile {
+  background-image: url("./img/profile.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.rightButtMenu {
+  position: absolute;
+  right: 12px;
+  top: 0px;
+}
+
+.dotProfile {
+  width: 13px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: #1acb98;
+  bottom: 2px;
+  right: 2px;
+  border: solid 3px white;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.dropdown-menu[data-bs-popper] {
+  right: 0;
+  left: unset;
+}
+
+.mail {
+  color: rgb(219, 219, 219);
+}
+
+#profileDropdown > li > a {
+  padding: 10px 10px;
+}
+
+.profile > ul {
+  padding: 0px 0px;
+}
+/* elementi della navbar, occhio che devi cambiare l'img utente*/
+.searchBar {
+  width: 100%;
+  height: 40vh;
+}
+
+.navbar {
+  background-color: white;
+  background-size: cover;
+  background-position: bottom;
+  display: block;
+}
+
+#navbarSupportedContent > ul > li > a {
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.314);
+  font-size: 1.2rem;
+  background: linear-gradient(
+    rgba(238, 118, 82, 0),
+    rgba(238, 118, 82, 0),
+    #ffffff00
+  );
+  width: 100%;
+  text-align: center;
+}
+
+#navbarSupportedContent > ul > li > .dropdown-menu {
+  right: unset;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  display: block;
+  border: none;
+}
+#navbarSupportedContent > ul > li > .dropdown-menu.show {
+  height: 128px;
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+.navBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: opacity 1s ease 0.4s;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  opacity: 100%;
+  /*  pointer-events: none;*/
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-item.dropdown {
+    border-bottom: #00000087 solid 2px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-flow: column;
+    align-items: center;
+  }
+  .nav-item.dropdown > .dropdown-menu {
+    width: 100%;
+    background: #00000000;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .nav-item.dropdown > #profileDropdown {
+    width: unset;
+  }
+  .nav-item.dropdown > .dropdown-menu a:hover {
+    background: #00000099;
+    color: white;
+  }
+  .nav-item.dropdown > .dropdown-menu a {
+    border-radius: 0;
+    transition: all 0.3s ease;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.nav-item.dropdown > .dropdown-menu a:hover {
+  background: #f9f9f936;
+  color: white;
+}
+
+.searchBar span {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.217);
+}
+
+.searchBar div:nth-child(1) {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/*Fine area di testata */
+
+/*Inizio area card*/
+
+.bookmarkButton {
+  background: white;
+  color: black;
+  font-size: 1.1rem;
+
+  padding: 0.5rem 1rem;
+  border-radius: 80px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.selected {
+  background: black;
+}
+.selected span {
+  color: white;
+}
+
+.destCard {
+  flex-wrap: wrap;
+}
+
+.title > span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.fullImgCard {
+  position: relative;
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+
+.fullImgCard .img {
+  width: 100%;
+}
+
+.fullImgCard .img > img {
+  object-fit: cover;
+  width: 100%;
+}
+.fullImgCard i {
+  margin: 0.5rem;
+  font-size: 1.4rem;
+  color: white;
+}
+.fullImgCard > .top {
+  top: -40px;
+  transition: all 0.5s ease;
+}
+
+.fullImgCard:hover > .top {
+  top: 0px;
+}
+
+.fullImgCard > .bottom {
+  bottom: -30px;
+  transition: all 0.5s ease;
+}
+.fullImgCard:hover > .bottom {
+  bottom: 0px;
+}
+.fullImgCard > .bottom span {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.fullImgCard > .bottom,
+.fullImgCard > .top {
+  padding: 0.5rem 0.5rem;
+  z-index: 2;
+}
+
+.backShadow {
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 25%,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  /*pointer-events: none;*/
+  opacity: 0%;
+  transition: all 0.5s ease;
+}
+
+.fullImgCard:hover > .backShadow {
+  opacity: 50%;
+}
+
+.fullImgCard i.toggle {
+  font-weight: 600;
+}
+.frameArea {
+  overflow: hidden;
+}
+.frameArea > div {
+  left: 0%;
+  transition: all 0.8s;
+  position: relative;
+}
+
+.goTopButton {
+  width: 50px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  font-size: 1.6rem;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+.goTopButton i {
+  color: white;
+}
+
+.goTopButton.out {
+  bottom: -50px;
+}
+
+.cardImageArea {
+  width: 100%;
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 10/13;
+}
+
+.card {
+  margin: 10px 0;
+}
+
+.card > :nth-child(1),
+.card > :nth-child(3) {
+  margin: 0px 20px;
+}
+
+.cardBottomArea p {
+  margin-block-end: 0;
+}
+
+.cardBottomArea > :nth-child(1) {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.4rem 0;
+}
+.cardBottomArea > :nth-child(2) {
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+.cardBottomArea > :nth-child(3) {
+  font-size: 0.7rem;
+  color: grey;
+  font-family: sans-serif;
+}
+.cardHeadArea > span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.scopri > a {
+  font-size: 0.9rem;
+  color: rgb(0, 162, 255);
+  font-family: sans-serif;
+}
+
+footer ul {
+  list-style: none;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+footer img {
+  height: 40px;
+}
+
+.contactBox {
+  border-top: solid rgb(0, 162, 255) 2px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.boxLogo {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.searchBar {
+  z-index: 2;
+  position: relative;
+}
+.navbar {
+  margin-bottom: 2rem;
+}
+
+.navbar > :nth-child(1) {
+  position: relative;
+  z-index: 3;
+}
+
+.mod .searchBar {
+  height: 15vh;
+}
+
+.mod .card img {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 62/20;
+}
+
+.mod .modifyArea,
+.mod .saveArea {
+  cursor: pointer;
+}
+
+.mod .modifyArea *,
+.mod .saveArea * {
+  font-weight: 600;
+  color: rgb(0, 162, 255);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.mod .modifyArea:hover *,
+.mod .saveArea:hover * {
+  color: black;
+  pointer-events: none;
+}
+
+.mod .modifica {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mod .card > :nth-child(2) {
+  padding: 0px 20px;
+}
+.mod .card > :nth-child(2) img {
+  width: 100%;
+}
+
+.mod .card input {
+  width: 100%;
+}
+
+.mod .card label {
+  font-size: 0.8rem;
+  margin-block: 0;
+  color: grey;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+.mod .card textarea {
+  width: 100%;
+}
+
+.fa-trash {
+  color: #d20000;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.fa-trash:hover {
+  color: #800000;
+}
+
+.idProdTx {
+  text-align: end;
+}
+
+.homeButton i {
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.homeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.homeButton a {
+  text-decoration: none;
+}
+
+.newProductArea {
+  border-top: solid rgb(0, 162, 255) 2px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: solid rgb(0, 162, 255);
+  border-radius: 100%;
+  transition: 0.3s ease;
+  background-color: #00000000;
+}
+.addButton:hover {
+  border: solid black;
+  background-color: rgba(0, 162, 255, 0.145);
+}
+
+.addButton:hover i {
+  color: black;
+}
+
+.addButton i {
+  font-size: 1.5rem;
+  color: rgb(0, 162, 255);
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.card {
+  border: solid 2px rgb(0, 162, 255);
+  aspect-ratio: 10/18;
+}
+.mod .card {
+  aspect-ratio: unset;
+}
+
+.mod .newProductArea > span {
+  padding-bottom: 2rem;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+.messageArea {
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.messageArea span {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.det .cardBottomArea > :nth-child(2) {
+  font-size: 0.9rem;
+  display: unset;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+
+.det .cardHeadArea > span {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.det .card {
+  border: none;
+  aspect-ratio: unset;
+}
+
+.det .cardBottomArea > :nth-child(3) {
+  font-size: 1rem;
+  color: grey;
+  font-family: sans-serif;
+  text-align: end;
+  margin-top: 1rem;
+}
+
+.det .card img {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: unset;
+  max-width: 500px;
+}
+
+.det .cardImageArea {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.det .cardBottomArea > :nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0.4rem 0;
+}
+
+.det .searchBar {
+  width: 100%;
+  height: 20vh;
+}

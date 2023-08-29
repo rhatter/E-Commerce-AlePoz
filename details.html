@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetTheGame</title>
+    <link rel="icon" href="./img/logo.png" sizes="32x32" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/58eb6192a7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-1.10.2.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="det" data-page="Details">
+    <nav class="navbar navbar-expand-lg" id="navBar">
+      <div class="container-fluid position-relative">
+        <a class="navbar-brand navbar-brand d-flex align-items-center" href="#">
+          <img src="./img/logo.png" />
+          <span>GetTheGame</span>
+        </a>
+        <div class="d-flex gx-2 rightButtMenu position-absolute">
+          <div class="homeButton">
+            <a href="./index.html">
+              <i class="fa-solid fa-house-chimney-crack"></i>
+            </a>
+          </div>
+
+          <div
+            class="rounded-circle btn btn-light navButt profile position-relative nav-item dropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="true"
+          >
+            <div class="dotProfile position-absolute"></div>
+            <ul
+              class="dropdown-menu end-0"
+              data-bs-popper="static"
+              id="profileDropdown"
+            >
+              <li class="border-bottom">
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="col position-relative mx-1">
+                    <div
+                      class="rounded-circle btn btn-light navButt profile position-relative nav-item"
+                    >
+                      <div class="dotProfile position-absolute"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column mx-1">
+                    <span>Alessandro Pozzato</span>
+                    <span class="mail">alessandropoz@hotmail.com</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="fa-regular fa-user"></i>
+                  <span class="ms-2">Profile</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  onclick="toModifyPage()"
+                >
+                  <i class="fa-solid fa-gear"></i>
+                  <span class="ms-2">Backoffice</span>
+                </a>
+              </li>
+              <li class="border-top">
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="fa-solid fa-power-off"></i>
+                  <span class="ms-2">Sign out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="searchBar container-fluid d-flex justify-content-center flex-column"
+      >
+        <div class="col-9 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+          <span>Tutto quello che desideri scoprire sulla tua passione</span>
+        </div>
+      </div>
+      <div class="navBackground"></div>
+    </nav>
+    <main class="d-flex justify-content-center">
+      <div
+        class="cardArea col-md-10 col-sm-12 destCard d-flex flex-row justify-content-center"
+      ></div>
+    </main>
+    <footer class="container-fluid d-flex justify-content-center">
+      <div
+        class="contactBox d-flex col-md-10 col-sm-12 justify-content-between"
+      >
+        <div class="boxLink">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Issue</a></li>
+          </ul>
+        </div>
+        <div class="boxLogo">
+          <img src="./img/logo.png" alt="" />
+          <span>GetTheGame</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./main.js"></script>
+</html>
